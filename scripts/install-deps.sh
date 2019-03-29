@@ -2,7 +2,7 @@
 
 set -e
 
-printf "\n[-] Update the backports"
+printf "\n[-] Update the backports\n\n"
 
 deb [check-valid-until=no] http://archive.debian.org/debian jessie-backports main
 
