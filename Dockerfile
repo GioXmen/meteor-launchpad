@@ -1,5 +1,5 @@
-FROM debian:stretch
-#UPDATES to stretch!
+FROM debian:jessie
+
 MAINTAINER Jeremy Shimko <jeremy.shimko@gmail.com>
 
 RUN groupadd -r node && useradd -m -g node node

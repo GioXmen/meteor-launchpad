@@ -2,9 +2,14 @@
 
 set -e
 
+printf "\n[-] Update the backports"
+
+deb [check-valid-until=no] http://archive.debian.org/debian jessie-backports main
+
 printf "\n[-] Installing base OS dependencies...\n\n"
 
 # install base dependencies
+
 
 apt-get update
 
