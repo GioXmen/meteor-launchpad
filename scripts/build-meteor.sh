@@ -30,6 +30,10 @@ printf "\n[-] Building Meteor application...\n\n"
 mkdir -p $APP_BUNDLE_DIR
 meteor build --directory $APP_BUNDLE_DIR --server-only
 
+printf "fibers"
+npm uninstall fibers
+npm install fibers
+
 # run npm install in bundle
 printf "\n[-] Running npm install in the server bundle...\n\n"
 cd $APP_BUNDLE_DIR/bundle/programs/server/

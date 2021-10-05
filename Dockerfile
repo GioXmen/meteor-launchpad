@@ -1,6 +1,6 @@
-FROM debian:jessie
+FROM ubuntu:latest #debian:jessie
 
-RUN echo 'deb http://security.debian.org/ jessie/updates main contrib non-free' > /etc/apt/sources.list.d/backports.list
+#RUN echo 'deb http://security.debian.org/ jessie/updates main contrib non-free' > /etc/apt/sources.list.d/backports.list
 
 MAINTAINER Jeremy Shimko <jeremy.shimko@gmail.com>
 
