@@ -1,4 +1,5 @@
-FROM ubuntu:latest #debian:jessie
+FROM ubuntu:latest
+#debian:jessie
 
 #RUN echo 'deb http://security.debian.org/ jessie/updates main contrib non-free' > /etc/apt/sources.list.d/backports.list
 
