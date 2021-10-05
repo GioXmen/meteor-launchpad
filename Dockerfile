@@ -1,4 +1,4 @@
-FROM ubunut:18.04
+FROM ubuntu:18.04
 #debian:jessie
 
 #RUN echo 'deb http://security.debian.org/ jessie/updates main contrib non-free' > /etc/apt/sources.list.d/backports.list
