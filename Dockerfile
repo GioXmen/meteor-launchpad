@@ -53,7 +53,6 @@ ONBUILD ENV TOOL_NODE_FLAGS $TOOL_NODE_FLAGS
 
 # optionally custom apt dependencies at app build time
 ONBUILD RUN if [ "$APT_GET_INSTALL" ]; then apt-get update && apt-get upgrade -y && apt-get install -y $APT_GET_INSTALL; fi
-ONBUILD RUN echo "insecure" >> $HOME/.curlrc:
 
 # copy the app to the container
 ONBUILD COPY . $APP_SOURCE_DIR

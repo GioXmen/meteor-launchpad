@@ -29,8 +29,8 @@ apt-get install -y --no-install-recommends curl bzip2 bsdtar build-essential pyt
 
 dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"
 
-wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"
-wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"
+wget --no-check-certificate -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"
+wget --no-check-certificate -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"
 
 export GNUPGHOME="$(mktemp -d)"
 
@@ -44,3 +44,5 @@ chmod +x /usr/local/bin/gosu
 gosu nobody true
 
 apt-get purge -y --auto-remove wget
+
+update-ca-certificates
