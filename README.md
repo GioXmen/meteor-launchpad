@@ -1,4 +1,10 @@
-### Owner 
+### Modified for BuildStuff 2021
+- Meteor installer fixed to install specific meteor version compatible with Nortal Tech Radar
+- Fixes for NodeJS certificate verification issues
+- MongoDB rolled back to be compatible with Meteor 1.8.1
+- Removed some non-required features that were causing issues from installation script
+
+### Original Github description 
 This is a copy of https://github.com/jshimko/meteor-launchpad I changed only the debian version because of 404 at jessie-updates.
 
 [![Circle CI](https://circleci.com/gh/jshimko/meteor-launchpad/tree/master.svg?style=svg)](https://circleci.com/gh/jshimko/meteor-launchpad/tree/master)

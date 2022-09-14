@@ -9,9 +9,9 @@ if [ "$DEV_BUILD" = true ]; then
   curl -k -v https://install.meteor.com/ | sh
 else
   # download installer script
-  curl -k -v "https://install.meteor.com/?release=1.8.1" -o /tmp/install_meteor.sh
+  curl -k -v "https://install.meteor.com/?release=2.7.3" -o /tmp/install_meteor.sh
 
   # install
-  printf "\n[-] Installing MeteoR 1.8.1...\n\n"
+  printf "\n[-] Installing Meteor 2.7.3...\n\n"
   sh /tmp/install_meteor.sh
 fi
